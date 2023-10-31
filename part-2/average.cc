@@ -1,7 +1,7 @@
 // Jemin Song
 // jeminsong0119@csu.fullerton.edu
 // @jeminsong
-// Partners: @BOBCHOI
+// Partners: @Adriantr13
 
 #include <iostream>
 #include <string>
@@ -14,15 +14,10 @@ int main(int argc, char* argv[]) {
     return -1;
   }
   double sum = 0.0;
-  int ime = 1;
-  for (; ime < arguments.size(); ime++) {
-    std::string num = (arguments.at(ime));
-    double number = 0.0;
-    number = std::stod(arguments.at(ime));
-    sum += number;
+  for (int i = 1; i < argc; ++i) {
+    sum += std::stod(arguments[i]);
   }
-  double average = 0.0;
-  average = sum / (ime - 1);
+  double average = sum / (argc - 1);
   std::cout << "average = " << average << "\n";
   return 0;
 }
