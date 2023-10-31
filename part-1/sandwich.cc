@@ -1,7 +1,7 @@
 // Jemin Song
 // jeminsong0119@csu.fullerton.edu
 // @jeminsong
-// Partners: @jeminsong
+// Partners: @Adriantr13
 
 #include <iostream>
 #include <string>
